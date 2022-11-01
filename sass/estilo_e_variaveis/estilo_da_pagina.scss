@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    padding-top: 35px;
+}
+
 .is-dark {
     background-color: $bg-color;
     color: $font-color;
@@ -62,7 +66,7 @@
 }
 
 div#intro {
-    padding: 0px 15px;
+    padding: 0px 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,14 +78,13 @@ div#intro {
     #mudarTema {
         font-size: 13px;
         font-weight: bold;
-        padding: 0px 10px;
-        height: 30px;
+        padding: 3px 10px;
     }
 }
 
 
 #container {
-    padding: 0px 15px;
+    padding: 0px 40px;
     max-width: 440px;
     margin: auto;
 
@@ -144,11 +147,13 @@ div#intro {
 }
 
 
-@media screen and (max-width: 450px) {
+
+
+@media screen and (max-width: 510px) {
     #container {
         div#intro {
             h1 {
-                font-size: 1.7em;
+                font-size: 1.2em;
             }
         }
         div#res {
@@ -160,16 +165,48 @@ div#intro {
     }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 375px) {
     div#intro {
         h1 {
-            font-size: 1.3em;
+            font-size: 1.1em;
+        }
+        #mudarTema {
+            font-size: 12px;
+            padding: 3px 5px;
+            margin: 3px;
         }
     }
     #container {
         div#res {
             input#telaDeResposta {
-                width: 65%;
+                width: 60%;
+            }
+        }
+
+        #buttoes {
+            .teclas {
+                font-size: 1.1em;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 310px) {
+    div#intro {
+        h1 {
+            font-size: 1em;
+        }
+        #mudarTema {
+            font-size: 10px;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+    #container {
+        div#res {
+            input#telaDeResposta {
+                width: 50%;
             }
         }
     }
