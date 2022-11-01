@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT [Ubunto]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Ancora com CSS -->
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Calculadora</title>
+</head>
+<body class="is-dark">
+    <div id="intro">
+        <h1>Calc.JS</h1>
+        <button id="mudarTema">Switch Thema Dark/light</button>
+    </div>
+    <section id="container">
+        <input type="text" id="tela">
+
+        <div id="buttoes">
+            <button class="teclas" value="apagar">C</button>
+            <button class="teclas" value=" ( ">(</button>
+            <button class="teclas" value=" ) ">)</button>
+            <button class="teclas" value=" / ">/</button>
+            <button class="teclas" value="7">7</button>
+            <button class="teclas" value="8">8</button>
+            <button class="teclas" value="9">9</button>
+            <button class="teclas" value=" * ">*</button>
+            <button class="teclas" value="4">4</button>
+            <button class="teclas" value="5">5</button>
+            <button class="teclas" value="6">6</button>
+            <button class="teclas" value=" - ">-</button>
+            <button class="teclas" value="1">1</button>
+            <button class="teclas" value="2">2</button>
+            <button class="teclas" value="3">3</button>
+            <button class="teclas" value=" + ">+</button>
+            <button class="teclas" value="0">0</button>
+            <button class="teclas" value=".">.</button>
+            <button class="teclas" value=" % ">Mod</button>
+            <button class="teclas" value="igual">=</button>
+        </div>
+
+        <div id="res">
+            <button id="copy" class="copy">Copy</button>
+            <input type="text" id="telaDeResposta">
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

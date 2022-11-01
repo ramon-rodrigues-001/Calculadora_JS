@@ -1,0 +1,176 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.is-dark {
+    background-color: $bg-color;
+    color: $font-color;
+    
+    #mudarTema {
+        background-color: $bg-color;
+        color: $font-color;
+        border: solid 2px $font-color;
+    }
+    
+    input {
+        background-color: $bg-color;
+        color: $font-color;
+        border: solid 2px $font-color;
+    }
+
+    div#res {
+        background-color: $bg-color;
+        color: $font-color;
+        border: solid 1px $font-color;
+
+        button#copy{
+            color: $font-color;
+            border: solid 1px transparent;
+            border-right: solid 1px $font-color;
+        }
+    }
+}
+.is-white {
+    background-color: $font-color;
+    color: $bg-color;
+    
+    #mudarTema {
+        background-color: $font-color;
+        color: $bg-color;
+        border: solid 2px $bg-color;
+    }
+    
+    input {
+        background-color: $font-color;
+        color: $bg-color;
+        border: solid 2px $bg-color;
+    }
+
+    div#res {
+        background-color: $font-color;
+        color: $bg-color;
+        border: solid 1px $bg-color;
+
+        button#copy{
+            color: $bg-color;
+            border: solid 1px transparent;
+            border-right: solid 1px $bg-color;
+        }
+    }
+}
+
+div#intro {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 440px;
+    height: 100px;
+
+    #mudarTema {
+        font-size: 13px;
+        font-weight: bold;
+        padding: 0px 10px;
+        height: 30px;
+    }
+}
+
+
+#container {
+    padding: 0px 15px;
+    max-width: 440px;
+    margin: auto;
+
+
+    #tela, #res {
+        margin: 25px 0px;
+    }
+
+    input {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 5.2px 0px;
+        border-radius: 5px;
+        text-align: right;
+        width: 100%;
+    }
+
+    #buttoes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        
+
+        .teclas {
+            background-color: $primary-color;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+        }
+    }
+    
+    div#res {
+        border-radius: 5px;
+
+        button#copy {
+            font-size: 17px;
+            background-color: transparent;
+            padding: 9.5px;
+            cursor: pointer;
+            margin: 0;
+            width: 80px;
+            height: 44px;
+
+            &.copied {
+                border: solid 2px $primary-color;
+                color: $primary-color;
+                border-radius: 5px 0px 20px 5px;
+            }
+        }
+        input#telaDeResposta {
+            width: 80%;
+            border: none;
+
+            &.resultInvalido {
+                color: $error-color;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    #container {
+        div#intro {
+            h1 {
+                font-size: 1.7em;
+            }
+        }
+        div#res {
+
+            input#telaDeResposta {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    div#intro {
+        h1 {
+            font-size: 1.3em;
+        }
+    }
+    #container {
+        div#res {
+            input#telaDeResposta {
+                width: 65%;
+            }
+        }
+    }
+}

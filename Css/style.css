@@ -1,0 +1,144 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.is-dark {
+  background-color: #212529;
+  color: #f1f5f9;
+}
+.is-dark #mudarTema {
+  background-color: #212529;
+  color: #f1f5f9;
+  border: solid 2px #f1f5f9;
+}
+.is-dark input {
+  background-color: #212529;
+  color: #f1f5f9;
+  border: solid 2px #f1f5f9;
+}
+.is-dark div#res {
+  background-color: #212529;
+  color: #f1f5f9;
+  border: solid 1px #f1f5f9;
+}
+.is-dark div#res button#copy {
+  color: #f1f5f9;
+  border: solid 1px transparent;
+  border-right: solid 1px #f1f5f9;
+}
+
+.is-white {
+  background-color: #f1f5f9;
+  color: #212529;
+}
+.is-white #mudarTema {
+  background-color: #f1f5f9;
+  color: #212529;
+  border: solid 2px #212529;
+}
+.is-white input {
+  background-color: #f1f5f9;
+  color: #212529;
+  border: solid 2px #212529;
+}
+.is-white div#res {
+  background-color: #f1f5f9;
+  color: #212529;
+  border: solid 1px #212529;
+}
+.is-white div#res button#copy {
+  color: #212529;
+  border: solid 1px transparent;
+  border-right: solid 1px #212529;
+}
+
+div#intro {
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 440px;
+  height: 100px;
+}
+div#intro #mudarTema {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0px 10px;
+  height: 30px;
+}
+
+#container {
+  padding: 0px 15px;
+  max-width: 440px;
+  margin: auto;
+}
+#container #tela, #container #res {
+  margin: 25px 0px;
+}
+#container input {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5.2px 0px;
+  border-radius: 5px;
+  text-align: right;
+  width: 100%;
+}
+#container #buttoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+#container #buttoes .teclas {
+  background-color: #4dff91;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+#container div#res {
+  border-radius: 5px;
+}
+#container div#res button#copy {
+  font-size: 17px;
+  background-color: transparent;
+  padding: 9.5px;
+  cursor: pointer;
+  margin: 0;
+  width: 80px;
+  height: 44px;
+}
+#container div#res button#copy.copied {
+  border: solid 2px #4dff91;
+  color: #4dff91;
+  border-radius: 5px 0px 20px 5px;
+}
+#container div#res input#telaDeResposta {
+  width: 80%;
+  border: none;
+}
+#container div#res input#telaDeResposta.resultInvalido {
+  color: #ff0043;
+}
+
+@media screen and (max-width: 450px) {
+  #container div#intro h1 {
+    font-size: 1.7em;
+  }
+  #container div#res input#telaDeResposta {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 325px) {
+  div#intro h1 {
+    font-size: 1.3em;
+  }
+  #container div#res input#telaDeResposta {
+    width: 65%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
