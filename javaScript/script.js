@@ -1,8 +1,6 @@
 // Mudar tema
-document.getElementById('mudarTema').addEventListener('click', ()=>{
-    document.body.classList.toggle('is-dark')
-    document.body.classList.toggle('is-white')
-})
+import {mudarTema} from "./mudarTema"
+document.getElementById('mudarTema').addEventListener('click', mudarTema)
 
 const tela = document.getElementById('tela')
 const telaDeResult = document.getElementById('telaDeResposta')
@@ -23,6 +21,7 @@ function efetuarCalculo() {
     telaDeResult.value = resultado
     telaDeResult.classList.remove('resultInvalido')
 }
+
 
 // Adicionando atraves do input
 tela.addEventListener('keydown', (evInput)=>{
