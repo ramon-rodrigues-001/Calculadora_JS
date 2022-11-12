@@ -26,7 +26,7 @@ export function addTeclado(ev) {
 
 // Adicionando atravez dos butões
 export function addButoes(ev) {
-    el.addEventListener('click', (evento)=>{
+    ev.addEventListener('click', (evento)=>{
 
         const elementoAcionado = evento.currentTarget
 
