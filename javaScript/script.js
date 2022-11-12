@@ -1,6 +1,6 @@
 // Mudar tema
-import {mudarTema} from "./mudarTema"
-document.getElementById('mudarTema').addEventListener('click', mudarTema)
+import {fmudarTema} from "./mudarTema"
+document.getElementById('mudarTema').addEventListener('click', fmudarTema)
 
 const tela = document.getElementById('tela')
 const telaDeResult = document.getElementById('telaDeResposta')
