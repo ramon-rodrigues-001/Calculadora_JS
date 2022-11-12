@@ -1,6 +1,8 @@
 // Mudar tema
-import {fmudarTema} from "./mudarTema"
+import {fmudarTema} from "./mudarTema.js"
 document.getElementById('mudarTema').addEventListener('click', fmudarTema)
+
+
 
 const tela = document.getElementById('tela')
 const telaDeResult = document.getElementById('telaDeResposta')
@@ -52,16 +54,6 @@ document.querySelectorAll('.teclas').forEach((elButton)=>{
 })
 
 
-document.getElementById('copy').addEventListener('click', (evCopy)=>{
-    const copy = evCopy.currentTarget
-    
-    if (copy.innerText === 'Copy') {
-        copy.innerText = 'Copied'
-        copy.classList = 'copied'
-        window.navigator.clipboard.writeText(telaDeResult.value)
-    }
-    else {
-        copy.innerText = 'Copy'
-        copy.classList = 'copy'
-    }
-})
+// Sistema de copy para copiar o resultado
+import {fCopy} from "./sistemOfCopy.js"
+document.getElementById('copy').addEventListener('click', fCopy)
