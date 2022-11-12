@@ -10,12 +10,12 @@ telaDeResult.setAttribute('disabled', !telaDeResult.disabled)
 
 
 // Adicionando atraves do teclado
-import {addTeclado} from "./calculos"
+import {addTeclado} from "./calculos.js"
 tela.addEventListener('keydown', addTeclado)
 
 
 // Adicionando atraves dos butões
-import {addButoes} from "./calculos"
+import {addButoes} from "./calculos.js"
 document.querySelectorAll('.teclas').forEach(addButoes)
 
 
