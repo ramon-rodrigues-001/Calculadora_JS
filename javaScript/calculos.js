@@ -1,5 +1,8 @@
 // Efetuando o calculo designado
 function efetuarCalculo() {
+
+    const telaDeResult = document.getElementById('telaDeResposta')
+
     telaDeResult.value = 'Erro'
     telaDeResult.classList.add('resultInvalido')
 
@@ -28,7 +31,7 @@ export function addTeclado(ev) {
 export function addButoes(ev) {
     
     const telaDeResult = document.getElementById('telaDeResposta')
-    
+
     ev.addEventListener('click', (evento)=>{
 
         const elementoAcionado = evento.currentTarget
