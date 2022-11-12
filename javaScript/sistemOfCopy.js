@@ -1,5 +1,7 @@
 // Sistema de copy
 
+const telaDeResult = document.getElementById('telaDeResposta')
+
 export function fCopy(ev) {
     const copy = ev.currentTarget
     
