@@ -1,8 +1,7 @@
 // Sistema de copy
 
-const telaDeResult = document.getElementById('telaDeResposta')
-
 export function fCopy(ev) {
+    const telaDeResult = document.getElementById('telaDeResposta')
     const copy = ev.currentTarget
     
     if (copy.innerText === 'Copy') {
