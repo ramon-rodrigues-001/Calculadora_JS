@@ -9,21 +9,21 @@ body {
 }
 
 .is-dark {
-  background-color: #212529;
+  background-color: hsl(210, 11%, 15%);
   color: #f1f5f9;
 }
 .is-dark #mudarTema {
-  background-color: #212529;
+  background-color: hsl(210, 11%, 15%);
   color: #f1f5f9;
   border: solid 2px #f1f5f9;
 }
 .is-dark input {
-  background-color: #212529;
+  background-color: hsl(210, 11%, 15%);
   color: #f1f5f9;
   border: solid 2px #f1f5f9;
 }
 .is-dark div#res {
-  background-color: #212529;
+  background-color: hsl(210, 11%, 15%);
   color: #f1f5f9;
   border: solid 1px #f1f5f9;
 }
@@ -39,23 +39,23 @@ body {
 }
 .is-white #mudarTema {
   background-color: #f1f5f9;
-  color: #212529;
-  border: solid 2px #212529;
+  color: hsl(210, 11%, 15%);
+  border: solid 2px hsl(210, 11%, 15%);
 }
 .is-white input {
   background-color: #f1f5f9;
-  color: #212529;
-  border: solid 2px #212529;
+  color: hsl(210, 11%, 15%);
+  border: solid 2px hsl(210, 11%, 15%);
 }
 .is-white div#res {
   background-color: #f1f5f9;
-  color: #212529;
-  border: solid 1px #212529;
+  color: hsl(210, 11%, 15%);
+  border: solid 1px hsl(210, 11%, 15%);
 }
 .is-white div#res button#copy {
-  color: #212529;
+  color: hsl(210, 11%, 15%);
   border: solid 1px transparent;
-  border-right: solid 1px #212529;
+  border-right: solid 1px hsl(210, 11%, 15%);
 }
 
 div#intro {
